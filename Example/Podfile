@@ -1,11 +1,10 @@
 use_frameworks!
+platform :ios, '12.0'
 
 target 'BCryptSwift_Example' do
-  pod 'BCryptSwift', :path => '../'
+  pod 'WisetailBCryptSwift', :path => '../'
 
   target 'BCryptSwift_Tests' do
     inherit! :search_paths
-
-    
   end
 end

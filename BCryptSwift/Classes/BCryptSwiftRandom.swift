@@ -99,9 +99,9 @@ public struct BCryptSwiftRandom {
     /// - Returns: An array of random numbers
     /// - Throws: BCryptError.randomGenerationFailed if secure random generation fails
     public static func generateNumberSequence(from lowerBound: Int32,
-                                            to upperBound: Int32,
-                                            ofLength length: Int,
-                                            withUniqueValues unique: Bool) throws -> [Int32] {
+                                              to upperBound: Int32,
+                                              ofLength length: Int,
+                                              withUniqueValues unique: Bool) throws -> [Int32] {
         guard length >= 1 else {
             return []
         }

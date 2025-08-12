@@ -49,10 +49,12 @@ jobs:
           -format lcov > coverage.lcov
       
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
       with:
         file: ./coverage.lcov
+        token: ${{ secrets.CODECOV_TOKEN }}
         fail_ci_if_error: false
+        verbose: true
 
   test-cocoapods:
     name: Test (CocoaPods)
@@ -120,6 +122,7 @@ jobs:
   build-docs:
     name: Build Documentation
     runs-on: macos-13
+    continue-on-error: true
     steps:
     - uses: actions/checkout@v4
     
@@ -131,6 +134,9 @@ jobs:
     - name: Install Jazzy
       run: gem install jazzy
       
+    - name: Build Swift Package
+      run: swift build
+      
     - name: Generate documentation
       run: |
         jazzy \
@@ -139,9 +145,9 @@ jobs:
           --author_url https://github.com/wisetail \
           --github_url https://github.com/wisetail/BCryptSwift \
           --module BCryptSwift \
-          --source-directory BCryptSwift/Classes \
+          --swift-build-tool spm \
+          --build-tool-arguments -Xswiftc,-swift-version,-Xswiftc,5 \
           --readme README.md \
-          --documentation "*.md" \
           --output docs
           
     - name: Upload documentation artifacts
@@ -170,21 +176,21 @@ jobs:
       run: |
         VERSION=${{ github.event.release.tag_name }}
         VERSION=${VERSION#v}  # Remove 'v' prefix if present
-        sed -i '' "s/s.version.*=.*/s.version          = '$VERSION'/" BCryptSwift.podspec
+        sed -i '' "s/s.version.*=.*/s.version          = '$VERSION'/" WisetailBCryptSwift.podspec
         
     - name: Validate podspec
-      run: pod lib lint BCryptSwift.podspec --allow-warnings
+      run: pod lib lint WisetailBCryptSwift.podspec --allow-warnings
       
     - name: Deploy to CocoaPods Trunk
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
-        pod trunk push BCryptSwift.podspec --allow-warnings
+        pod trunk push WisetailBCryptSwift.podspec --allow-warnings
         
     - name: Update Package.swift version tag
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add BCryptSwift.podspec
+        git add WisetailBCryptSwift.podspec
         git commit -m "Update podspec version to ${{ github.event.release.tag_name }}"
         git push

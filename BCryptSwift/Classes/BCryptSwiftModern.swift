@@ -188,7 +188,7 @@ public struct BCryptSwiftModern {
     // MARK: - Base64 Encoding/Decoding
     
     private static func encodeData(_ data: [Int8], ofLength length: UInt) -> String {
-        guard data.count > 0, length > 0 else {
+        guard !data.isEmpty, length > 0 else {
             return ""
         }
         
