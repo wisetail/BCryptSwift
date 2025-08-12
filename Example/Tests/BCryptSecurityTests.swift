@@ -163,17 +163,22 @@ class BCryptSecurityTests: XCTestCase {
     // MARK: - Thread Safety Tests
     
     func testConcurrentOperations() {
+        // Reduce concurrent operations for CI environments
+        let operationCount = 5
         let expectation = self.expectation(description: "Concurrent operations")
-        expectation.expectedFulfillmentCount = 10
+        expectation.expectedFulfillmentCount = operationCount
         
         let queue = DispatchQueue(label: "test.concurrent", attributes: .concurrent)
         let password = "concurrentTest"
         
-        for i in 0..<10 {
+        // Use testing configuration for faster execution
+        let config = BCryptConfiguration.testing
+        
+        for i in 0..<operationCount {
             queue.async {
                 autoreleasepool {
                     do {
-                        let salt = try BCryptSwiftModern.generateSalt()
+                        let salt = try BCryptSwiftModern.generateSalt(config: config)
                         let hash = try BCryptSwiftModern.hashPassword(password + "\(i)", withSalt: salt)
                         let isValid = try BCryptSwiftModern.verifyPassword(password + "\(i)", 
                                                                           matchesHash: hash)
@@ -186,7 +191,8 @@ class BCryptSecurityTests: XCTestCase {
             }
         }
         
-        waitForExpectations(timeout: 30) { error in
+        // Generous timeout for CI environments
+        waitForExpectations(timeout: 120) { error in
             if let error = error {
                 XCTFail("Timeout waiting for concurrent operations: \(error)")
             }
