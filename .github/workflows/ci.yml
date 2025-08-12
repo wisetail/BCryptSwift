@@ -138,17 +138,7 @@ jobs:
       run: swift build
       
     - name: Generate documentation
-      run: |
-        jazzy \
-          --clean \
-          --author "Dave Friedel / Wisetail" \
-          --author_url https://github.com/wisetail \
-          --github_url https://github.com/wisetail/BCryptSwift \
-          --module BCryptSwift \
-          --swift-build-tool spm \
-          --build-tool-arguments -Xswiftc,-swift-version,-Xswiftc,5 \
-          --readme README.md \
-          --output docs
+      run: jazzy --output docs
           
     - name: Upload documentation artifacts
       uses: actions/upload-artifact@v4

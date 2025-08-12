@@ -6,12 +6,16 @@ author_url: https://github.com/wisetail
 github_url: https://github.com/wisetail/BCryptSwift
 github_file_prefix: https://github.com/wisetail/BCryptSwift/tree/main
 
-readme: README_UPDATED.md
+readme: README.md
 
 documentation: "*.md"
 
-source_directory: BCryptSwift/Classes
 swift_build_tool: spm
+build_tool_arguments:
+  - -Xswiftc
+  - -swift-version
+  - -Xswiftc
+  - 5
 
 clean: true
 objc: false
