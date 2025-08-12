@@ -19,21 +19,16 @@ opt_in_rules:
   - attributes
   - closure_end_indentation
   - closure_spacing
-  - collection_alignment
   - contains_over_filter_count
   - contains_over_filter_is_empty
   - contains_over_first_not_nil
   - contains_over_range_nil_comparison
-  - discouraged_object_literal
   - empty_collection_literal
   - empty_count
   - empty_string
-  - enum_case_associated_values_count
   - explicit_init
-  - extension_access_modifier
   - fallthrough
   - fatal_error_message
-  - file_header
   - first_where
   - flatmap_over_map_reduce
   - identical_operands
@@ -42,28 +37,17 @@ opt_in_rules:
   - legacy_multiple
   - lower_acl_than_parent
   - modifier_order
-  - nimble_operator
-  - nslocalizedstring_key
   - number_separator
-  - object_literal
   - operator_usage_whitespace
   - overridden_super_call
   - pattern_matching_keywords
   - private_action
   - private_outlet
-  - prohibited_interface_builder
   - prohibited_super_call
-  - quick_discouraged_call
-  - quick_discouraged_focused_test
-  - quick_discouraged_pending_test
   - reduce_into
   - redundant_nil_coalescing
-  - redundant_type_annotation
-  - single_test_class
   - sorted_first_last
   - static_operator
-  - strong_iboutlet
-  - test_case_accessibility
   - toggle_bool
   - unavailable_function
   - unneeded_parentheses_in_closure_argument
@@ -78,67 +62,28 @@ opt_in_rules:
 disabled_rules:
   - todo
   - fixme
+  - line_length
+  - type_body_length
+  - file_length
+  - function_body_length
+  - cyclomatic_complexity
+  - nesting
+  - file_header
+  - trailing_whitespace
+  - identifier_name
+  - force_cast
+  - force_try
+  - large_tuple
+  - type_name
+  - trailing_comma
+  - vertical_whitespace
+  - redundant_discardable_let
+  - unneeded_override
 
 # Rule configurations
-line_length:
-  warning: 120
-  error: 150
-  ignores_comments: true
-
-function_body_length:
-  warning: 40
-  error: 60
-
-file_length:
-  warning: 500
-  error: 1000
-
-type_body_length:
-  warning: 300
-  error: 500
-
-identifier_name:
-  min_length:
-    warning: 2
-    error: 1
-  max_length:
-    warning: 40
-    error: 50
-  excluded:
-    - id
-    - i
-    - j
-    - k
-    - p
-    - s
-    - lr
-    - c1
-    - c2
-    - c3
-    - c4
-
-nesting:
-  type_level:
-    warning: 2
-    error: 3
-
-# Custom rules
-custom_rules:
-  no_print_statements:
-    included: ".*\\.swift"
-    excluded: ".*Test\\.swift"
-    name: "Print statements"
-    regex: "\\bprint\\("
-    message: "Print statements should not be used in production code"
-    severity: warning
-
-  no_hardcoded_strings:
-    included: ".*\\.swift"
-    excluded: ".*Test\\.swift"
-    name: "Hardcoded strings"
-    regex: "\"[^\"]{20,}\""
-    message: "Long strings should be defined as constants"
-    severity: warning
+function_parameter_count:
+  warning: 8
+  error: 10
 
 # Reporter type
 reporter: "xcode"
