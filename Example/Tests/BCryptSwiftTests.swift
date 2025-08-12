@@ -18,7 +18,7 @@
 //
 
 import XCTest
-@testable import BCryptSwift
+@testable import WisetailBCryptSwift
 
 class BCryptSwiftTests: XCTestCase {
     

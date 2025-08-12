@@ -36,14 +36,14 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/wisetail/BCryptSwift.git", from: "2.0.0")
+    .package(url: "https://github.com/wisetail/BCryptSwift.git", from: "2.0.1")
 ]
 ```
 
 Or in Xcode: 
 1. File → Add Package Dependencies
 2. Enter package URL: `https://github.com/wisetail/BCryptSwift.git`
-3. Select version: "Up to Next Major" → "2.0.0"
+3. Select version: "Up to Next Major" → "2.0.1"
 
 ### CocoaPods
 
@@ -223,7 +223,7 @@ If you're migrating from the original BCryptSwift by Felipe Florencio Garcia:
 **For Swift Package Manager users:**
 ```swift
 // Simply update your Package.swift URL:
-.package(url: "https://github.com/wisetail/BCryptSwift.git", from: "2.0.0")
+.package(url: "https://github.com/wisetail/BCryptSwift.git", from: "2.0.1")
 // The import statement remains the same:
 import BCryptSwift
 ```

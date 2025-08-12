@@ -1,0 +1,6 @@
+framework module WisetailBCryptSwift {
+  umbrella header "WisetailBCryptSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

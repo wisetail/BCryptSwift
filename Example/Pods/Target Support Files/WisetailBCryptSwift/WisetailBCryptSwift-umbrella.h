@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_BCryptSwift_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BCryptSwift_TestsVersionString[];
+FOUNDATION_EXPORT double WisetailBCryptSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char WisetailBCryptSwiftVersionString[];
 

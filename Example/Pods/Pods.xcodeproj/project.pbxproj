@@ -7,318 +7,324 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B61C83272ADF08CFC4B56E55576BD6 /* BCryptSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DC3A325C0671A5BFBF1C482B3F6DDF /* BCryptSwift-dummy.m */; };
-		0C01F5FC399ADF98A6F8F7E2E75B1260 /* BCryptConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF804BE0F44E25815C5455C764E529 /* BCryptConfiguration.swift */; };
-		0DFDCEA86973CD61225FC21906788A8C /* BCryptError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64867D727743A80758F729438C5EAC1 /* BCryptError.swift */; };
-		433D15B84A759FEC2121E67FDE7CB3AD /* BCryptSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69396563320EAE6A4E8EE554868B197D /* BCryptSwift.swift */; };
-		44BD03E224E8AFD1A399EDFFDFBA3E01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4EC20712FC520D937E8D66BB48B50D55 /* Pods-BCryptSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB4D36480A898E7CC1EC6D7511AF10 /* Pods-BCryptSwift_Tests-dummy.m */; };
-		7FCD6D689DA108E3670B0ADDD738C3B9 /* Pods-BCryptSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD960802054830BD300C5BF2BE6E890 /* Pods-BCryptSwift_Example-dummy.m */; };
-		827088010A9DD266CCFACF6909C67C7F /* Pods-BCryptSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81005339186676CF9CA01BDAE2971914 /* Pods-BCryptSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC26C818A6335186671D65778C4C6FAA /* BCryptSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D598925FB638135655FC7C48287CA1 /* BCryptSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D64096304FE83E3674E666D4A73D218A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D9E3698534C6610805598E5139EFECD2 /* Pods-BCryptSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FAF228227A659FB7A2F197B027E4F7 /* Pods-BCryptSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC66E950FFEB24721FE8E9856FA85503 /* BCryptSwiftRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B4EC287ED0B065D845BFC1386BA1A /* BCryptSwiftRandom.swift */; };
-		E3FD3F1BB59601DD2B4B65861B848680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F4EA1F4648FC975D88AD12D416B8F732 /* BCryptSwiftModern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B85E20618EEF023AC58320054B8F02 /* BCryptSwiftModern.swift */; };
+		1194F6B82BE6874FBAF56BAE13E159B7 /* BCryptSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF071A03299ED2A312BE9DB0FB14F1 /* BCryptSwift.swift */; };
+		25948D56F084927C26FF4553ADCA9961 /* WisetailBCryptSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F70B4742DF3E46E5040EFB3B50F34C4E /* WisetailBCryptSwift-dummy.m */; };
+		261FA8CCEBC6DDA9742890721C720494 /* BCryptConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9B9D24833B85724954727A6A52FEF /* BCryptConfiguration.swift */; };
+		303BE94C8FDB86DA71A0D23A62A567BA /* Pods-BCryptSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C3D31E7B3873B5CF4FC91102A07C2 /* Pods-BCryptSwift_Example-dummy.m */; };
+		5D5EB6A092ECFCE3A35710914286A0DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		6C8CC03FF52DD6F7129A9A0A407B6E0D /* BCryptError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD85EC3F1CCB5364EE5B8F2ED614EF0 /* BCryptError.swift */; };
+		6DFCA9EFF5BD97264E63FC82C6374307 /* BCryptSwiftModern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125290D027C7E1057CC717B77AC5CB1E /* BCryptSwiftModern.swift */; };
+		952D9614E0E52D2F425475E7D59C1A11 /* WisetailBCryptSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFB4FBAB3553D121528988F1314AD55 /* WisetailBCryptSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD0CCE0E9DEA358182699561EA1ADCDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		D00E20C93DE3AC7230D9E3CDEC3213EB /* Pods-BCryptSwift_Example-BCryptSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2219B048E3F878126611723EB7096672 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-dummy.m */; };
+		DCF42C1479EF09CDC2C91A70A7C743C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		E4D49903D3E467D926783B82929500E3 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 989225D267453E79FDF757A93722973B /* Pods-BCryptSwift_Example-BCryptSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF0911704185487289E54919CCC383F /* BCryptSwiftRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93300A8B59622856D978346971ABA5AC /* BCryptSwiftRandom.swift */; };
+		FC7A0A4801E5E9EC77FBE5B51EA4E3B4 /* Pods-BCryptSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CB875D19F8A1AC284858A07EE90FDC /* Pods-BCryptSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD916A31E5DBC3B0FA0F218BFEE75C5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AE3A472F579E4560EEB720601F316590 /* PBXContainerItemProxy */ = {
+		AEDF83E289A2536445877CBEF2665F5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D0C4BE9067B6273567F0AFB239C47C7D;
-			remoteInfo = "Pods-BCryptSwift_Example";
+			remoteGlobalIDString = F4C4E7AA65BB674910D64297D57C63E6;
+			remoteInfo = WisetailBCryptSwift;
 		};
-		C662AAE5F9C128FF58994978254F546E /* PBXContainerItemProxy */ = {
+		EC4FE98F27F216CB1940C80984D68B0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C2D34CEB96B2618A6EC90E1A7D12D6F2;
-			remoteInfo = BCryptSwift;
+			remoteGlobalIDString = F4C4E7AA65BB674910D64297D57C63E6;
+			remoteInfo = WisetailBCryptSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B85E20618EEF023AC58320054B8F02 /* BCryptSwiftModern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptSwiftModern.swift; path = BCryptSwift/Classes/BCryptSwiftModern.swift; sourceTree = "<group>"; };
-		0CD960802054830BD300C5BF2BE6E890 /* Pods-BCryptSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BCryptSwift_Example-dummy.m"; sourceTree = "<group>"; };
-		1583568AC00A7DD9C299488858B51E98 /* Pods-BCryptSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		159F0C610CE6598FDEF7F8F01A8A0E90 /* Pods-BCryptSwift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BCryptSwift_Tests"; path = Pods_BCryptSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		16CC6ACF7BFEDE23689A03A2E03CDCDB /* Pods-BCryptSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BCryptSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		21D598925FB638135655FC7C48287CA1 /* BCryptSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BCryptSwift-umbrella.h"; sourceTree = "<group>"; };
-		393D026E76F8603FF8267A5186232880 /* Pods-BCryptSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		45B1169A6BD06C5EB9BB3A4695BCB6B5 /* Pods-BCryptSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		47494D47E1DAA0870794EF255E8DA6D8 /* Pods-BCryptSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Example-Info.plist"; sourceTree = "<group>"; };
-		4BC8343B07B233329B572C0254F3D5CF /* BCryptSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BCryptSwift-Info.plist"; sourceTree = "<group>"; };
-		5A7C95389F6BCEBCCB03E7B752EDB4E4 /* Pods-BCryptSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BCryptSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		65F8EAE09C9B12ABF9CBD2E7BEB85722 /* Pods-BCryptSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BCryptSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		69396563320EAE6A4E8EE554868B197D /* BCryptSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptSwift.swift; path = BCryptSwift/Classes/BCryptSwift.swift; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7BA8F09E01D864F7921D86FA3FEA47E6 /* BCryptSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BCryptSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7EF32B0D3FA571239D0299FB7DB4D93D /* Pods-BCryptSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		80C189F661F99FC26C3EDB3DEA8816BA /* Pods-BCryptSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		81005339186676CF9CA01BDAE2971914 /* Pods-BCryptSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BCryptSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		818AAA06550189635ED3BD8400F0FF21 /* BCryptSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BCryptSwift.debug.xcconfig; sourceTree = "<group>"; };
-		8E360CE1A5D6B0C8C35750A8436EBA2B /* BCryptSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BCryptSwift; path = BCryptSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EB88AB5BDBBE21B5FB1665D6DE4A276 /* Pods-BCryptSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8F3B9C9AF677ABFC9BD9BCEFBB0514DC /* BCryptSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BCryptSwift.modulemap; sourceTree = "<group>"; };
+		07552B2BC4F93A4A660571C07F090E0A /* Pods-BCryptSwift_Example-BCryptSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09D0A86E0C5AADDAAC47B4A28D9CDF6E /* WisetailBCryptSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WisetailBCryptSwift.debug.xcconfig; sourceTree = "<group>"; };
+		125290D027C7E1057CC717B77AC5CB1E /* BCryptSwiftModern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptSwiftModern.swift; path = BCryptSwift/Classes/BCryptSwiftModern.swift; sourceTree = "<group>"; };
+		2219B048E3F878126611723EB7096672 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests-dummy.m"; sourceTree = "<group>"; };
+		23860FD49486869719245D9B6E7B22F1 /* Pods-BCryptSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BCryptSwift_Example.modulemap"; sourceTree = "<group>"; };
+		43B377ABFB33F7AE85D17BB9584211F3 /* Pods-BCryptSwift_Example-BCryptSwift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BCryptSwift_Example-BCryptSwift_Tests"; path = Pods_BCryptSwift_Example_BCryptSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4685254D2634EA46495D95C43FC5E283 /* WisetailBCryptSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WisetailBCryptSwift; path = WisetailBCryptSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE9B9D24833B85724954727A6A52FEF /* BCryptConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptConfiguration.swift; path = BCryptSwift/Classes/BCryptConfiguration.swift; sourceTree = "<group>"; };
+		573C3D31E7B3873B5CF4FC91102A07C2 /* Pods-BCryptSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BCryptSwift_Example-dummy.m"; sourceTree = "<group>"; };
+		75D4C71648F47379A39C82C6CF2F5760 /* Pods-BCryptSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		75EC2178F921C5BAF7DE9863B7B07543 /* Pods-BCryptSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		76CB875D19F8A1AC284858A07EE90FDC /* Pods-BCryptSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BCryptSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		7CF583095CDFEB3D71BE2487F34B9BD6 /* WisetailBCryptSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WisetailBCryptSwift-prefix.pch"; sourceTree = "<group>"; };
+		82B19D9B2A305B2A4ABB84744A73F350 /* WisetailBCryptSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WisetailBCryptSwift.release.xcconfig; sourceTree = "<group>"; };
+		89D2C046580E6D89BFA2280487F64530 /* WisetailBCryptSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WisetailBCryptSwift.modulemap; sourceTree = "<group>"; };
+		8B91DC071644FE4A6277778F52A970FA /* Pods-BCryptSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BCryptSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9104C4E810FFAB4B9F512B716335A9E3 /* Pods-BCryptSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		93300A8B59622856D978346971ABA5AC /* BCryptSwiftRandom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptSwiftRandom.swift; path = BCryptSwift/Classes/BCryptSwiftRandom.swift; sourceTree = "<group>"; };
 		94F5915E5E05735983DF7F54515DAA08 /* Pods-BCryptSwift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BCryptSwift_Example"; path = Pods_BCryptSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C82C8C226D765FCE0A133B07B2CF56A /* Pods-BCryptSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Tests-Info.plist"; sourceTree = "<group>"; };
+		952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		989225D267453E79FDF757A93722973B /* Pods-BCryptSwift_Example-BCryptSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9A9D896B26AD6FF3BC652AFFD04399BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9B41D3A9771DFC33F2ADB0C8824E727C /* Pods-BCryptSwift_Example-BCryptSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests-Info.plist"; sourceTree = "<group>"; };
+		9C14996162B272C93BCA96AD3DBC3974 /* Pods-BCryptSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BCryptSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5AF804BE0F44E25815C5455C764E529 /* BCryptConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptConfiguration.swift; path = BCryptSwift/Classes/BCryptConfiguration.swift; sourceTree = "<group>"; };
-		A857D09A3DBEE85BCA0950B09072746C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B8FAF228227A659FB7A2F197B027E4F7 /* Pods-BCryptSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BCryptSwift_Example-umbrella.h"; sourceTree = "<group>"; };
-		C2B3C4B8EDD15C94BE643159F59DE3BA /* BCryptSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BCryptSwift.release.xcconfig; sourceTree = "<group>"; };
-		C64867D727743A80758F729438C5EAC1 /* BCryptError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptError.swift; path = BCryptSwift/Classes/BCryptError.swift; sourceTree = "<group>"; };
-		C8CD4C15BF6DDFFBA66F05C561474E27 /* BCryptSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BCryptSwift-prefix.pch"; sourceTree = "<group>"; };
-		CB5B4EC287ED0B065D845BFC1386BA1A /* BCryptSwiftRandom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptSwiftRandom.swift; path = BCryptSwift/Classes/BCryptSwiftRandom.swift; sourceTree = "<group>"; };
-		CFBB4D36480A898E7CC1EC6D7511AF10 /* Pods-BCryptSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BCryptSwift_Tests-dummy.m"; sourceTree = "<group>"; };
-		E1A62795C76040F105698F76C3D3FF2E /* Pods-BCryptSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BCryptSwift_Example.modulemap"; sourceTree = "<group>"; };
-		E2DC3A325C0671A5BFBF1C482B3F6DDF /* BCryptSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BCryptSwift-dummy.m"; sourceTree = "<group>"; };
-		EF1DF83007E22603708F24879B27241C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		FD9E923A6D4334DDE89E75CFE466F24D /* Pods-BCryptSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BCryptSwift_Tests.modulemap"; sourceTree = "<group>"; };
+		A3BF071A03299ED2A312BE9DB0FB14F1 /* BCryptSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptSwift.swift; path = BCryptSwift/Classes/BCryptSwift.swift; sourceTree = "<group>"; };
+		A74D0440DEA8D9432E2230CB4C48E156 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A9687B0B4601EFDA07D27E81C4066EC6 /* Pods-BCryptSwift_Example-BCryptSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests.modulemap"; sourceTree = "<group>"; };
+		AD8B07F7C27DAFA60E31D144B2272873 /* Pods-BCryptSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Example-Info.plist"; sourceTree = "<group>"; };
+		B10199716156CAF255FFAB2D766CE7F0 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		DBD85EC3F1CCB5364EE5B8F2ED614EF0 /* BCryptError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCryptError.swift; path = BCryptSwift/Classes/BCryptError.swift; sourceTree = "<group>"; };
+		E7500AEFCF3FA8530E0F8CFB104321EB /* Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E81E53C79B36D7AB5955775A75DD8F53 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED010FE07D31824A3D6DA9F67FF6CE27 /* WisetailBCryptSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WisetailBCryptSwift-Info.plist"; sourceTree = "<group>"; };
+		F1F910F28E7E577CDE2453F896490E7F /* Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F4F226DCC1DDE83188B4CEAF07DB3158 /* WisetailBCryptSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WisetailBCryptSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F70B4742DF3E46E5040EFB3B50F34C4E /* WisetailBCryptSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WisetailBCryptSwift-dummy.m"; sourceTree = "<group>"; };
+		FCFB4FBAB3553D121528988F1314AD55 /* WisetailBCryptSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WisetailBCryptSwift-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		053264E803CB1A261792A9468A295A80 /* Frameworks */ = {
+		211E0928C9390077DA3E475D64124F71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D64096304FE83E3674E666D4A73D218A /* Foundation.framework in Frameworks */,
+				BD0CCE0E9DEA358182699561EA1ADCDD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CFAAB006753198B2742F8EF6B9D81C3 /* Frameworks */ = {
+		B1BBB09D6DEFDD9AE5ABEE78509CF7A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44BD03E224E8AFD1A399EDFFDFBA3E01 /* Foundation.framework in Frameworks */,
+				DCF42C1479EF09CDC2C91A70A7C743C1 /* Foundation.framework in Frameworks */,
+				FD916A31E5DBC3B0FA0F218BFEE75C5C /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90C44D34983EF6D9E084786D050A9628 /* Frameworks */ = {
+		B7F263993FDEE82D73E858353D9F6118 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3FD3F1BB59601DD2B4B65861B848680 /* Foundation.framework in Frameworks */,
+				5D5EB6A092ECFCE3A35710914286A0DF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0854488E9F7545CAE66E58B366874E8F /* Targets Support Files */ = {
+		05C9C0D4AC53C41737F4BC01BC5B3759 /* Pods-BCryptSwift_Example-BCryptSwift_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7439A338E970D31990315EEC529EB331 /* Pods-BCryptSwift_Example */,
-				807A51967B3117895CB01C43E909CECA /* Pods-BCryptSwift_Tests */,
+				A9687B0B4601EFDA07D27E81C4066EC6 /* Pods-BCryptSwift_Example-BCryptSwift_Tests.modulemap */,
+				07552B2BC4F93A4A660571C07F090E0A /* Pods-BCryptSwift_Example-BCryptSwift_Tests-acknowledgements.markdown */,
+				E81E53C79B36D7AB5955775A75DD8F53 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-acknowledgements.plist */,
+				2219B048E3F878126611723EB7096672 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-dummy.m */,
+				B10199716156CAF255FFAB2D766CE7F0 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-frameworks.sh */,
+				9B41D3A9771DFC33F2ADB0C8824E727C /* Pods-BCryptSwift_Example-BCryptSwift_Tests-Info.plist */,
+				989225D267453E79FDF757A93722973B /* Pods-BCryptSwift_Example-BCryptSwift_Tests-umbrella.h */,
+				E7500AEFCF3FA8530E0F8CFB104321EB /* Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig */,
+				F1F910F28E7E577CDE2453F896490E7F /* Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-BCryptSwift_Example-BCryptSwift_Tests";
+			path = "Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests";
 			sourceTree = "<group>";
 		};
-		19CC31A553B0F9D3560523DD51117D82 /* Pod */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7BA8F09E01D864F7921D86FA3FEA47E6 /* BCryptSwift.podspec */,
-				EF1DF83007E22603708F24879B27241C /* LICENSE */,
-				A857D09A3DBEE85BCA0950B09072746C /* README.md */,
+				7CE426AC267333500FABE7BA0A5A42A0 /* iOS */,
 			);
-			name = Pod;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		483F5671CA80D1510C83E24DE599D925 /* BCryptSwift */ = {
+		2E04A69C2A3FD9FF8C22822CC18CE700 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5AF804BE0F44E25815C5455C764E529 /* BCryptConfiguration.swift */,
-				C64867D727743A80758F729438C5EAC1 /* BCryptError.swift */,
-				69396563320EAE6A4E8EE554868B197D /* BCryptSwift.swift */,
-				00B85E20618EEF023AC58320054B8F02 /* BCryptSwiftModern.swift */,
-				CB5B4EC287ED0B065D845BFC1386BA1A /* BCryptSwiftRandom.swift */,
-				19CC31A553B0F9D3560523DD51117D82 /* Pod */,
-				DDB358E74F5B88D023E64192464F0CB6 /* Support Files */,
+				89D2C046580E6D89BFA2280487F64530 /* WisetailBCryptSwift.modulemap */,
+				F70B4742DF3E46E5040EFB3B50F34C4E /* WisetailBCryptSwift-dummy.m */,
+				ED010FE07D31824A3D6DA9F67FF6CE27 /* WisetailBCryptSwift-Info.plist */,
+				7CF583095CDFEB3D71BE2487F34B9BD6 /* WisetailBCryptSwift-prefix.pch */,
+				FCFB4FBAB3553D121528988F1314AD55 /* WisetailBCryptSwift-umbrella.h */,
+				09D0A86E0C5AADDAAC47B4A28D9CDF6E /* WisetailBCryptSwift.debug.xcconfig */,
+				82B19D9B2A305B2A4ABB84744A73F350 /* WisetailBCryptSwift.release.xcconfig */,
 			);
-			name = BCryptSwift;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WisetailBCryptSwift";
 			sourceTree = "<group>";
 		};
-		532493147E126D8C7E35AFAE3F4B514C /* Development Pods */ = {
+		312B396AEE108955DBDE8C3A818210B2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				483F5671CA80D1510C83E24DE599D925 /* BCryptSwift */,
+				BBDC82CBE64FCADD2D992FB26F21C8BC /* WisetailBCryptSwift */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		4295D72A59EB2880E942CAF7A84E4226 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				A74D0440DEA8D9432E2230CB4C48E156 /* LICENSE */,
+				9A9D896B26AD6FF3BC652AFFD04399BA /* README.md */,
+				F4F226DCC1DDE83188B4CEAF07DB3158 /* WisetailBCryptSwift.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7CE426AC267333500FABE7BA0A5A42A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */,
+				C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		57C32F49378F1CA9581F045EA69C644B /* Products */ = {
+		8D2507729704EBE8ACA76E7B8A518E87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E360CE1A5D6B0C8C35750A8436EBA2B /* BCryptSwift */,
 				94F5915E5E05735983DF7F54515DAA08 /* Pods-BCryptSwift_Example */,
-				159F0C610CE6598FDEF7F8F01A8A0E90 /* Pods-BCryptSwift_Tests */,
+				43B377ABFB33F7AE85D17BB9584211F3 /* Pods-BCryptSwift_Example-BCryptSwift_Tests */,
+				4685254D2634EA46495D95C43FC5E283 /* WisetailBCryptSwift */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7439A338E970D31990315EEC529EB331 /* Pods-BCryptSwift_Example */ = {
+		9ECE5DF4E00E445E1C5F7C6AC8672E07 /* Pods-BCryptSwift_Example */ = {
 			isa = PBXGroup;
 			children = (
-				E1A62795C76040F105698F76C3D3FF2E /* Pods-BCryptSwift_Example.modulemap */,
-				16CC6ACF7BFEDE23689A03A2E03CDCDB /* Pods-BCryptSwift_Example-acknowledgements.markdown */,
-				1583568AC00A7DD9C299488858B51E98 /* Pods-BCryptSwift_Example-acknowledgements.plist */,
-				0CD960802054830BD300C5BF2BE6E890 /* Pods-BCryptSwift_Example-dummy.m */,
-				5A7C95389F6BCEBCCB03E7B752EDB4E4 /* Pods-BCryptSwift_Example-frameworks.sh */,
-				47494D47E1DAA0870794EF255E8DA6D8 /* Pods-BCryptSwift_Example-Info.plist */,
-				B8FAF228227A659FB7A2F197B027E4F7 /* Pods-BCryptSwift_Example-umbrella.h */,
-				393D026E76F8603FF8267A5186232880 /* Pods-BCryptSwift_Example.debug.xcconfig */,
-				8EB88AB5BDBBE21B5FB1665D6DE4A276 /* Pods-BCryptSwift_Example.release.xcconfig */,
+				23860FD49486869719245D9B6E7B22F1 /* Pods-BCryptSwift_Example.modulemap */,
+				9C14996162B272C93BCA96AD3DBC3974 /* Pods-BCryptSwift_Example-acknowledgements.markdown */,
+				9104C4E810FFAB4B9F512B716335A9E3 /* Pods-BCryptSwift_Example-acknowledgements.plist */,
+				573C3D31E7B3873B5CF4FC91102A07C2 /* Pods-BCryptSwift_Example-dummy.m */,
+				8B91DC071644FE4A6277778F52A970FA /* Pods-BCryptSwift_Example-frameworks.sh */,
+				AD8B07F7C27DAFA60E31D144B2272873 /* Pods-BCryptSwift_Example-Info.plist */,
+				76CB875D19F8A1AC284858A07EE90FDC /* Pods-BCryptSwift_Example-umbrella.h */,
+				75EC2178F921C5BAF7DE9863B7B07543 /* Pods-BCryptSwift_Example.debug.xcconfig */,
+				75D4C71648F47379A39C82C6CF2F5760 /* Pods-BCryptSwift_Example.release.xcconfig */,
 			);
 			name = "Pods-BCryptSwift_Example";
 			path = "Target Support Files/Pods-BCryptSwift_Example";
 			sourceTree = "<group>";
 		};
-		807A51967B3117895CB01C43E909CECA /* Pods-BCryptSwift_Tests */ = {
+		B026F04FDA1B89D5F3D766C5B0AA12C5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD9E923A6D4334DDE89E75CFE466F24D /* Pods-BCryptSwift_Tests.modulemap */,
-				65F8EAE09C9B12ABF9CBD2E7BEB85722 /* Pods-BCryptSwift_Tests-acknowledgements.markdown */,
-				45B1169A6BD06C5EB9BB3A4695BCB6B5 /* Pods-BCryptSwift_Tests-acknowledgements.plist */,
-				CFBB4D36480A898E7CC1EC6D7511AF10 /* Pods-BCryptSwift_Tests-dummy.m */,
-				9C82C8C226D765FCE0A133B07B2CF56A /* Pods-BCryptSwift_Tests-Info.plist */,
-				81005339186676CF9CA01BDAE2971914 /* Pods-BCryptSwift_Tests-umbrella.h */,
-				7EF32B0D3FA571239D0299FB7DB4D93D /* Pods-BCryptSwift_Tests.debug.xcconfig */,
-				80C189F661F99FC26C3EDB3DEA8816BA /* Pods-BCryptSwift_Tests.release.xcconfig */,
+				9ECE5DF4E00E445E1C5F7C6AC8672E07 /* Pods-BCryptSwift_Example */,
+				05C9C0D4AC53C41737F4BC01BC5B3759 /* Pods-BCryptSwift_Example-BCryptSwift_Tests */,
 			);
-			name = "Pods-BCryptSwift_Tests";
-			path = "Target Support Files/Pods-BCryptSwift_Tests";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BBDC82CBE64FCADD2D992FB26F21C8BC /* WisetailBCryptSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9B9D24833B85724954727A6A52FEF /* BCryptConfiguration.swift */,
+				DBD85EC3F1CCB5364EE5B8F2ED614EF0 /* BCryptError.swift */,
+				A3BF071A03299ED2A312BE9DB0FB14F1 /* BCryptSwift.swift */,
+				125290D027C7E1057CC717B77AC5CB1E /* BCryptSwiftModern.swift */,
+				93300A8B59622856D978346971ABA5AC /* BCryptSwiftRandom.swift */,
+				4295D72A59EB2880E942CAF7A84E4226 /* Pod */,
+				2E04A69C2A3FD9FF8C22822CC18CE700 /* Support Files */,
+			);
+			name = WisetailBCryptSwift;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				532493147E126D8C7E35AFAE3F4B514C /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				57C32F49378F1CA9581F045EA69C644B /* Products */,
-				0854488E9F7545CAE66E58B366874E8F /* Targets Support Files */,
+				312B396AEE108955DBDE8C3A818210B2 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				8D2507729704EBE8ACA76E7B8A518E87 /* Products */,
+				B026F04FDA1B89D5F3D766C5B0AA12C5 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DDB358E74F5B88D023E64192464F0CB6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8F3B9C9AF677ABFC9BD9BCEFBB0514DC /* BCryptSwift.modulemap */,
-				E2DC3A325C0671A5BFBF1C482B3F6DDF /* BCryptSwift-dummy.m */,
-				4BC8343B07B233329B572C0254F3D5CF /* BCryptSwift-Info.plist */,
-				C8CD4C15BF6DDFFBA66F05C561474E27 /* BCryptSwift-prefix.pch */,
-				21D598925FB638135655FC7C48287CA1 /* BCryptSwift-umbrella.h */,
-				818AAA06550189635ED3BD8400F0FF21 /* BCryptSwift.debug.xcconfig */,
-				C2B3C4B8EDD15C94BE643159F59DE3BA /* BCryptSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BCryptSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		05FD9EF10A3EF5B055EEDF993617E6D4 /* Headers */ = {
+		36569368A63C74CAD614244087BA4142 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9E3698534C6610805598E5139EFECD2 /* Pods-BCryptSwift_Example-umbrella.h in Headers */,
+				FC7A0A4801E5E9EC77FBE5B51EA4E3B4 /* Pods-BCryptSwift_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		506C07D9AC8F3F7A5B83B80519DD9F8D /* Headers */ = {
+		3F94D960FC690F5FC2BBB597BEE4797D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC26C818A6335186671D65778C4C6FAA /* BCryptSwift-umbrella.h in Headers */,
+				E4D49903D3E467D926783B82929500E3 /* Pods-BCryptSwift_Example-BCryptSwift_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEBD548D766314399526155B81F3EA13 /* Headers */ = {
+		851A20618F6A00CF4F173341E07F8730 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				827088010A9DD266CCFACF6909C67C7F /* Pods-BCryptSwift_Tests-umbrella.h in Headers */,
+				952D9614E0E52D2F425475E7D59C1A11 /* WisetailBCryptSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7CB41FD8DE81682332344AA7FB1D4D49 /* Pods-BCryptSwift_Tests */ = {
+		57EFC8A66907C14EEE4AAB17109F99E7 /* Pods-BCryptSwift_Example-BCryptSwift_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDBEB3E169E72CE7B5300044AE656A19 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Tests" */;
+			buildConfigurationList = B5883E54FBB1C607F3CDA18AD7291FB3 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Example-BCryptSwift_Tests" */;
 			buildPhases = (
-				AEBD548D766314399526155B81F3EA13 /* Headers */,
-				4C7A7B0576609BB83B4FF0F59F20CE00 /* Sources */,
-				90C44D34983EF6D9E084786D050A9628 /* Frameworks */,
-				A34F642F4A56E5433FDB4EE0D2FC8F98 /* Resources */,
+				3F94D960FC690F5FC2BBB597BEE4797D /* Headers */,
+				6797B7650C1A092412132A1D0FAAB806 /* Sources */,
+				211E0928C9390077DA3E475D64124F71 /* Frameworks */,
+				B889D7117D91C7A3B5792AD598193425 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				95ACF0743CADC4727938626FA0239832 /* PBXTargetDependency */,
+				D8AE56DCDDE335E0B2A7EABBDEFDB7D7 /* PBXTargetDependency */,
 			);
-			name = "Pods-BCryptSwift_Tests";
-			productName = Pods_BCryptSwift_Tests;
-			productReference = 159F0C610CE6598FDEF7F8F01A8A0E90 /* Pods-BCryptSwift_Tests */;
-			productType = "com.apple.product-type.framework";
-		};
-		C2D34CEB96B2618A6EC90E1A7D12D6F2 /* BCryptSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A823A639613FC93036ABFDF26A92942E /* Build configuration list for PBXNativeTarget "BCryptSwift" */;
-			buildPhases = (
-				506C07D9AC8F3F7A5B83B80519DD9F8D /* Headers */,
-				F0F2037ABE9D03ADF533E27065E44068 /* Sources */,
-				7CFAAB006753198B2742F8EF6B9D81C3 /* Frameworks */,
-				E96FE7F83BF1DACCF788E3C1E4DABC15 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BCryptSwift;
-			productName = BCryptSwift;
-			productReference = 8E360CE1A5D6B0C8C35750A8436EBA2B /* BCryptSwift */;
+			name = "Pods-BCryptSwift_Example-BCryptSwift_Tests";
+			productName = Pods_BCryptSwift_Example_BCryptSwift_Tests;
+			productReference = 43B377ABFB33F7AE85D17BB9584211F3 /* Pods-BCryptSwift_Example-BCryptSwift_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		D0C4BE9067B6273567F0AFB239C47C7D /* Pods-BCryptSwift_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 038D1DFAB401D9FF51C98D0BAB603CF8 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Example" */;
+			buildConfigurationList = F428252DA33A96C4F8451E6554A01F13 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Example" */;
 			buildPhases = (
-				05FD9EF10A3EF5B055EEDF993617E6D4 /* Headers */,
-				905CF9B27D5CFB6F4D738F7C5DE141E3 /* Sources */,
-				053264E803CB1A261792A9468A295A80 /* Frameworks */,
-				5BF0DCC64FC5FD558688FCBB88C4D04D /* Resources */,
+				36569368A63C74CAD614244087BA4142 /* Headers */,
+				0407F005AD9CD5E35A453B318A5A442E /* Sources */,
+				B7F263993FDEE82D73E858353D9F6118 /* Frameworks */,
+				F2730EACBB6888D90A64FB130925BC0C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4E5AA959916C7D5169F331126B881596 /* PBXTargetDependency */,
+				E911528596C5CB9E119979B9476E2B02 /* PBXTargetDependency */,
 			);
 			name = "Pods-BCryptSwift_Example";
 			productName = Pods_BCryptSwift_Example;
 			productReference = 94F5915E5E05735983DF7F54515DAA08 /* Pods-BCryptSwift_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4C4E7AA65BB674910D64297D57C63E6 /* WisetailBCryptSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05F19708BFE92F4FCEAFAF9E05C06916 /* Build configuration list for PBXNativeTarget "WisetailBCryptSwift" */;
+			buildPhases = (
+				851A20618F6A00CF4F173341E07F8730 /* Headers */,
+				EDFB02517752D385FB427665B2844942 /* Sources */,
+				B1BBB09D6DEFDD9AE5ABEE78509CF7A7 /* Frameworks */,
+				BDAF6ACE9D1FAFDDF67FEC83FA98B1BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WisetailBCryptSwift;
+			productName = WisetailBCryptSwift;
+			productReference = 4685254D2634EA46495D95C43FC5E283 /* WisetailBCryptSwift */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -340,33 +346,33 @@
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
-			productRefGroup = 57C32F49378F1CA9581F045EA69C644B /* Products */;
+			productRefGroup = 8D2507729704EBE8ACA76E7B8A518E87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2D34CEB96B2618A6EC90E1A7D12D6F2 /* BCryptSwift */,
 				D0C4BE9067B6273567F0AFB239C47C7D /* Pods-BCryptSwift_Example */,
-				7CB41FD8DE81682332344AA7FB1D4D49 /* Pods-BCryptSwift_Tests */,
+				57EFC8A66907C14EEE4AAB17109F99E7 /* Pods-BCryptSwift_Example-BCryptSwift_Tests */,
+				F4C4E7AA65BB674910D64297D57C63E6 /* WisetailBCryptSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5BF0DCC64FC5FD558688FCBB88C4D04D /* Resources */ = {
+		B889D7117D91C7A3B5792AD598193425 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A34F642F4A56E5433FDB4EE0D2FC8F98 /* Resources */ = {
+		BDAF6ACE9D1FAFDDF67FEC83FA98B1BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E96FE7F83BF1DACCF788E3C1E4DABC15 /* Resources */ = {
+		F2730EACBB6888D90A64FB130925BC0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,86 +382,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C7A7B0576609BB83B4FF0F59F20CE00 /* Sources */ = {
+		0407F005AD9CD5E35A453B318A5A442E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC20712FC520D937E8D66BB48B50D55 /* Pods-BCryptSwift_Tests-dummy.m in Sources */,
+				303BE94C8FDB86DA71A0D23A62A567BA /* Pods-BCryptSwift_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		905CF9B27D5CFB6F4D738F7C5DE141E3 /* Sources */ = {
+		6797B7650C1A092412132A1D0FAAB806 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FCD6D689DA108E3670B0ADDD738C3B9 /* Pods-BCryptSwift_Example-dummy.m in Sources */,
+				D00E20C93DE3AC7230D9E3CDEC3213EB /* Pods-BCryptSwift_Example-BCryptSwift_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0F2037ABE9D03ADF533E27065E44068 /* Sources */ = {
+		EDFB02517752D385FB427665B2844942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C01F5FC399ADF98A6F8F7E2E75B1260 /* BCryptConfiguration.swift in Sources */,
-				0DFDCEA86973CD61225FC21906788A8C /* BCryptError.swift in Sources */,
-				433D15B84A759FEC2121E67FDE7CB3AD /* BCryptSwift.swift in Sources */,
-				04B61C83272ADF08CFC4B56E55576BD6 /* BCryptSwift-dummy.m in Sources */,
-				F4EA1F4648FC975D88AD12D416B8F732 /* BCryptSwiftModern.swift in Sources */,
-				DC66E950FFEB24721FE8E9856FA85503 /* BCryptSwiftRandom.swift in Sources */,
+				261FA8CCEBC6DDA9742890721C720494 /* BCryptConfiguration.swift in Sources */,
+				6C8CC03FF52DD6F7129A9A0A407B6E0D /* BCryptError.swift in Sources */,
+				1194F6B82BE6874FBAF56BAE13E159B7 /* BCryptSwift.swift in Sources */,
+				6DFCA9EFF5BD97264E63FC82C6374307 /* BCryptSwiftModern.swift in Sources */,
+				ECF0911704185487289E54919CCC383F /* BCryptSwiftRandom.swift in Sources */,
+				25948D56F084927C26FF4553ADCA9961 /* WisetailBCryptSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4E5AA959916C7D5169F331126B881596 /* PBXTargetDependency */ = {
+		D8AE56DCDDE335E0B2A7EABBDEFDB7D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BCryptSwift;
-			target = C2D34CEB96B2618A6EC90E1A7D12D6F2 /* BCryptSwift */;
-			targetProxy = C662AAE5F9C128FF58994978254F546E /* PBXContainerItemProxy */;
+			name = WisetailBCryptSwift;
+			target = F4C4E7AA65BB674910D64297D57C63E6 /* WisetailBCryptSwift */;
+			targetProxy = EC4FE98F27F216CB1940C80984D68B0D /* PBXContainerItemProxy */;
 		};
-		95ACF0743CADC4727938626FA0239832 /* PBXTargetDependency */ = {
+		E911528596C5CB9E119979B9476E2B02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-BCryptSwift_Example";
-			target = D0C4BE9067B6273567F0AFB239C47C7D /* Pods-BCryptSwift_Example */;
-			targetProxy = AE3A472F579E4560EEB720601F316590 /* PBXContainerItemProxy */;
+			name = WisetailBCryptSwift;
+			target = F4C4E7AA65BB674910D64297D57C63E6 /* WisetailBCryptSwift */;
+			targetProxy = AEDF83E289A2536445877CBEF2665F5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1BE50F99FAEB8DB4EEF0205F2A2C4375 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF32B0D3FA571239D0299FB7DB4D93D /* Pods-BCryptSwift_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Tests/Pods-BCryptSwift_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Tests/Pods-BCryptSwift_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -508,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -521,10 +495,12 @@
 			};
 			name = Debug;
 		};
-		29428C4E8D91416C798F34311EAC7D23 /* Debug */ = {
+		3A115F44BADF62D0BE5D5A929A9916D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 818AAA06550189635ED3BD8400F0FF21 /* BCryptSwift.debug.xcconfig */;
+			baseConfigurationReference = 09D0A86E0C5AADDAAC47B4A28D9CDF6E /* WisetailBCryptSwift.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -533,29 +509,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BCryptSwift/BCryptSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BCryptSwift/BCryptSwift-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WisetailBCryptSwift/WisetailBCryptSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WisetailBCryptSwift/WisetailBCryptSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BCryptSwift/BCryptSwift.modulemap";
-				PRODUCT_MODULE_NAME = BCryptSwift;
-				PRODUCT_NAME = BCryptSwift;
+				MODULEMAP_FILE = "Target Support Files/WisetailBCryptSwift/WisetailBCryptSwift.modulemap";
+				PRODUCT_MODULE_NAME = WisetailBCryptSwift;
+				PRODUCT_NAME = WisetailBCryptSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		309D774D7D6DDAABF0EA99592BC728C5 /* Release */ = {
+		4D9C31D969391DAF932079EFA293216D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EB88AB5BDBBE21B5FB1665D6DE4A276 /* Pods-BCryptSwift_Example.release.xcconfig */;
+			baseConfigurationReference = F1F910F28E7E577CDE2453F896490E7F /* Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -564,12 +542,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -584,103 +562,7 @@
 			};
 			name = Release;
 		};
-		675E1B99E0A3467752342B9852E625B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80C189F661F99FC26C3EDB3DEA8816BA /* Pods-BCryptSwift_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Tests/Pods-BCryptSwift_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Tests/Pods-BCryptSwift_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8E0685B0F1E3261B094F2879206BFB9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2B3C4B8EDD15C94BE643159F59DE3BA /* BCryptSwift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BCryptSwift/BCryptSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BCryptSwift/BCryptSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BCryptSwift/BCryptSwift.modulemap";
-				PRODUCT_MODULE_NAME = BCryptSwift;
-				PRODUCT_NAME = BCryptSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		954D27BEAAE19DEB4377B420AB2209FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 393D026E76F8603FF8267A5186232880 /* Pods-BCryptSwift_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -730,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -742,14 +624,150 @@
 			};
 			name = Release;
 		};
+		82C4C185A6AE7D1433B964347549DAE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7500AEFCF3FA8530E0F8CFB104321EB /* Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E2485D9F6DEA5BAFCB285E536ED1153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D4C71648F47379A39C82C6CF2F5760 /* Pods-BCryptSwift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AA55D2C6B341B3C2419EC5641D7249F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EC2178F921C5BAF7DE9863B7B07543 /* Pods-BCryptSwift_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBA6CB7C5769154974720AB7E81EFE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B19D9B2A305B2A4ABB84744A73F350 /* WisetailBCryptSwift.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WisetailBCryptSwift/WisetailBCryptSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WisetailBCryptSwift/WisetailBCryptSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WisetailBCryptSwift/WisetailBCryptSwift.modulemap";
+				PRODUCT_MODULE_NAME = WisetailBCryptSwift;
+				PRODUCT_NAME = WisetailBCryptSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		038D1DFAB401D9FF51C98D0BAB603CF8 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Example" */ = {
+		05F19708BFE92F4FCEAFAF9E05C06916 /* Build configuration list for PBXNativeTarget "WisetailBCryptSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				954D27BEAAE19DEB4377B420AB2209FB /* Debug */,
-				309D774D7D6DDAABF0EA99592BC728C5 /* Release */,
+				3A115F44BADF62D0BE5D5A929A9916D6 /* Debug */,
+				CBA6CB7C5769154974720AB7E81EFE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -757,26 +775,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
-				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A823A639613FC93036ABFDF26A92942E /* Build configuration list for PBXNativeTarget "BCryptSwift" */ = {
+		B5883E54FBB1C607F3CDA18AD7291FB3 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Example-BCryptSwift_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29428C4E8D91416C798F34311EAC7D23 /* Debug */,
-				8E0685B0F1E3261B094F2879206BFB9F /* Release */,
+				82C4C185A6AE7D1433B964347549DAE8 /* Debug */,
+				4D9C31D969391DAF932079EFA293216D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDBEB3E169E72CE7B5300044AE656A19 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Tests" */ = {
+		F428252DA33A96C4F8451E6554A01F13 /* Build configuration list for PBXNativeTarget "Pods-BCryptSwift_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BE50F99FAEB8DB4EEF0205F2A2C4375 /* Debug */,
-				675E1B99E0A3467752342B9852E625B8 /* Release */,
+				9AA55D2C6B341B3C2419EC5641D7249F /* Debug */,
+				8E2485D9F6DEA5BAFCB285E536ED1153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

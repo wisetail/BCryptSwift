@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double BCryptSwiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char BCryptSwiftVersionString[];
+FOUNDATION_EXPORT double Pods_BCryptSwift_Example_BCryptSwift_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_BCryptSwift_Example_BCryptSwift_TestsVersionString[];
 

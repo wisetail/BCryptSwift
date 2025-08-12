@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43ED5757EC2A4F84D25BDE0C /* Pods_BCryptSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FEDDEC819DB555ADD30577 /* Pods_BCryptSwift_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -15,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		DB14ACED78084A6EB585A2B4 /* Pods_BCryptSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DCD2E3C899D558D1C188DF /* Pods_BCryptSwift_Example.framework */; };
+		EB038E43B81956BDCB723718 /* Pods_BCryptSwift_Example_BCryptSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352CC164E20F1579DF9694DC /* Pods_BCryptSwift_Example_BCryptSwift_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		05DCD2E3C899D558D1C188DF /* Pods_BCryptSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCryptSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18204FCDFCE99CDB96A7E396 /* Pods-BCryptSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCryptSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCryptSwift_Tests/Pods-BCryptSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		352CC164E20F1579DF9694DC /* Pods_BCryptSwift_Example_BCryptSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCryptSwift_Example_BCryptSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C69EAFCA216335FC9D06B25 /* Pods-BCryptSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCryptSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BCryptSwift_Tests/Pods-BCryptSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		44668B4C0ECB6047CAB9B971 /* WisetailBCryptSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WisetailBCryptSwift.podspec; path = ../WisetailBCryptSwift.podspec; sourceTree = "<group>"; };
 		515FA9684D460AB4781A2F34 /* Pods-BCryptSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCryptSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,8 +45,9 @@
 		607FACE51AFB9204008FA782 /* BCryptSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCryptSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		87FEDDEC819DB555ADD30577 /* Pods_BCryptSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCryptSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AE72B94EC583E8E3CAE003 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A1860B04EB752AFF129C055B /* Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8DE42A678269B55D7D21F78 /* Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DCD5A24740672DDE3981650D /* Pods-BCryptSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCryptSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43ED5757EC2A4F84D25BDE0C /* Pods_BCryptSwift_Tests.framework in Frameworks */,
+				EB038E43B81956BDCB723718 /* Pods_BCryptSwift_Example_BCryptSwift_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,8 @@
 				515FA9684D460AB4781A2F34 /* Pods-BCryptSwift_Example.release.xcconfig */,
 				3C69EAFCA216335FC9D06B25 /* Pods-BCryptSwift_Tests.debug.xcconfig */,
 				18204FCDFCE99CDB96A7E396 /* Pods-BCryptSwift_Tests.release.xcconfig */,
+				A1860B04EB752AFF129C055B /* Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig */,
+				A8DE42A678269B55D7D21F78 /* Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -154,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				05DCD2E3C899D558D1C188DF /* Pods_BCryptSwift_Example.framework */,
-				87FEDDEC819DB555ADD30577 /* Pods_BCryptSwift_Tests.framework */,
+				352CC164E20F1579DF9694DC /* Pods_BCryptSwift_Example_BCryptSwift_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +193,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				6D831CE43153970E4D89D6F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,11 +297,29 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BCryptSwift_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BCryptSwift_Example-BCryptSwift_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D831CE43153970E4D89D6F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WisetailBCryptSwift/WisetailBCryptSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WisetailBCryptSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BCryptSwift_Example-BCryptSwift_Tests/Pods-BCryptSwift_Example-BCryptSwift_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B9C73C1B51BA92CAA185B07C /* [CP] Embed Pods Frameworks */ = {
@@ -306,11 +329,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BCryptSwift_Example/Pods-BCryptSwift_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BCryptSwift/BCryptSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WisetailBCryptSwift/WisetailBCryptSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BCryptSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WisetailBCryptSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,7 +525,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C69EAFCA216335FC9D06B25 /* Pods-BCryptSwift_Tests.debug.xcconfig */;
+			baseConfigurationReference = A1860B04EB752AFF129C055B /* Pods-BCryptSwift_Example-BCryptSwift_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9RVZM5B68T;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -524,7 +547,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18204FCDFCE99CDB96A7E396 /* Pods-BCryptSwift_Tests.release.xcconfig */;
+			baseConfigurationReference = A8DE42A678269B55D7D21F78 /* Pods-BCryptSwift_Example-BCryptSwift_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9RVZM5B68T;
 				FRAMEWORK_SEARCH_PATHS = (

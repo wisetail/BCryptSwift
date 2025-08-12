@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import BCryptSwift
+import WisetailBCryptSwift
 
 class Tests: XCTestCase {
     

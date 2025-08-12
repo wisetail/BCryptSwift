@@ -5,6 +5,6 @@ target 'BCryptSwift_Example' do
   pod 'WisetailBCryptSwift', :path => '../'
 
   target 'BCryptSwift_Tests' do
-    inherit! :search_paths
+    inherit! :complete
   end
 end
