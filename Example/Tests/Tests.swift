@@ -1,6 +1,10 @@
 import UIKit
 import XCTest
+#if SWIFT_PACKAGE
+import BCryptSwift
+#else
 import WisetailBCryptSwift
+#endif
 
 class Tests: XCTestCase {
     

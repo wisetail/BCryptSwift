@@ -18,7 +18,11 @@
 //
 
 import XCTest
+#if SWIFT_PACKAGE
+@testable import BCryptSwift
+#else
 @testable import WisetailBCryptSwift
+#endif
 
 class BCryptSwiftTests: XCTestCase {
     
