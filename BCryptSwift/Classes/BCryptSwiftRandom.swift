@@ -21,124 +21,147 @@
 //
 
 import Foundation
+import Security
 
-public class BCryptSwiftRandom : NSObject {
+/// Secure random number generation for BCrypt operations
+public struct BCryptSwiftRandom {
     
-    /**
-     Generates a random number between low and high and places it into the receiver.
-     
-     :param: first   The first
-     :param: second  The second
-     
-     :returns: Int32  Random 32-bit number
-     */
-    public class func generateNumberBetween(_ first: Int32, _ second: Int32) -> Int32 {
-        var low : Int32
-        var high : Int32
+    /// Generate cryptographically secure random bytes
+    /// - Parameter length: The number of bytes to generate
+    /// - Returns: An array of random bytes
+    /// - Throws: BCryptError.randomGenerationFailed if secure random generation fails
+    public static func generateSecureRandomBytes(count: Int) throws -> [UInt8] {
+        var bytes = [UInt8](repeating: 0, count: count)
+        let status = SecRandomCopyBytes(kSecRandomDefault, count, &bytes)
         
-        if first <= second {
-            low  = first
-            high = second
-        }
-        else {
-            low  = second
-            high = first
+        guard status == errSecSuccess else {
+            throw BCryptError.randomGenerationFailed
         }
         
-        let modular = UInt32((high - low) + 1)
-        let random = arc4random()
-        
-        return Int32(random % modular) + low
+        return bytes
     }
     
-    /**
-     Generates an optionally unique sequence of random numbers between low and high and places them into the sequence.
-     
-     :param: length      The length of the sequence (must be at least 1)
-     :param: low         The low number (must be lower or equal to high).
-     :param: high        The high number (must be equal or higher than low).
-     :param: onlyUnique  TRUE if only unique values are to be generated, FALSE otherwise.
-     
-     The condition is checked that if `onlyUnique` is TRUE the `length` cannot exceed the range of `low` to `high`.
-     
-     :returns: [Int32]
-     */
-    public class func generateNumberSequenceBetween(_ first: Int32, _ second: Int32, ofLength length: Int, withUniqueValues unique: Bool) -> [Int32] {
-        if length < 1 {
-            return [Int32]()
+    /// Generate cryptographically secure random signed bytes
+    /// - Parameter length: The number of bytes to generate
+    /// - Returns: An array of random signed bytes
+    /// - Throws: BCryptError.randomGenerationFailed if secure random generation fails
+    public static func generateRandomSignedData(ofLength length: Int) throws -> [Int8] {
+        guard length >= 1 else {
+            return []
         }
         
-        var sequence : [Int32] = [Int32](repeating: 0, count: length)
-        if unique {
-            if (first <= second && (length > (second - first) + 1)) ||
-                (first > second  && (length > (first - second) + 1)) {
-                return [Int32]()
+        let unsignedBytes = try generateSecureRandomBytes(count: length)
+        return unsignedBytes.map { Int8(bitPattern: $0) }
+    }
+    
+    /// Generate a cryptographically secure random number within a range
+    /// - Parameters:
+    ///   - lowerBound: The lower bound (inclusive)
+    ///   - upperBound: The upper bound (inclusive)
+    /// - Returns: A random number within the specified range
+    /// - Throws: BCryptError.randomGenerationFailed if secure random generation fails
+    public static func generateSecureRandomNumber(from lowerBound: Int32, to upperBound: Int32) throws -> Int32 {
+        let low = min(lowerBound, upperBound)
+        let high = max(lowerBound, upperBound)
+        
+        // Handle edge case where low == high
+        if low == high {
+            return low
+        }
+        
+        let range = UInt32(high - low + 1)
+        
+        // Use rejection sampling to avoid modulo bias
+        let maxValid = UInt32.max - (UInt32.max % range)
+        var randomValue: UInt32
+        
+        repeat {
+            var bytes = [UInt8](repeating: 0, count: 4)
+            let status = SecRandomCopyBytes(kSecRandomDefault, 4, &bytes)
+            guard status == errSecSuccess else {
+                throw BCryptError.randomGenerationFailed
             }
             
-            var loop : Int = 0
-            while loop < length {
-                let number = BCryptSwiftRandom.generateNumberBetween(first, second)
-                
-                // If the number is unique, add it to the sequence
-                if !BCryptSwiftRandom.isNumber(number, inSequence: sequence, ofLength: loop) {
-                    sequence[loop] = number
-                    loop += 1
-                }
+            randomValue = bytes.withUnsafeBytes { buffer in
+                buffer.load(as: UInt32.self)
             }
+        } while randomValue >= maxValid
+        
+        return Int32(randomValue % range) + low
+    }
+    
+    /// Generate a sequence of unique random numbers within a range
+    /// - Parameters:
+    ///   - lowerBound: The lower bound (inclusive)
+    ///   - upperBound: The upper bound (inclusive)
+    ///   - length: The length of the sequence
+    ///   - unique: Whether values should be unique
+    /// - Returns: An array of random numbers
+    /// - Throws: BCryptError.randomGenerationFailed if secure random generation fails
+    public static func generateNumberSequence(from lowerBound: Int32,
+                                            to upperBound: Int32,
+                                            ofLength length: Int,
+                                            withUniqueValues unique: Bool) throws -> [Int32] {
+        guard length >= 1 else {
+            return []
         }
-        else {
-            // Repetitive values are allowed
-            for i in 0 ..< length {
-                sequence[i] = BCryptSwiftRandom.generateNumberBetween(first, second)
+        
+        let low = min(lowerBound, upperBound)
+        let high = max(lowerBound, upperBound)
+        let range = high - low + 1
+        
+        if unique && length > range {
+            // Cannot generate more unique values than the range allows
+            return []
+        }
+        
+        var sequence = [Int32]()
+        sequence.reserveCapacity(length)
+        
+        if unique {
+            var availableNumbers = Set(low...high)
+            
+            for _ in 0..<length {
+                guard !availableNumbers.isEmpty else { break }
+                
+                let index = try generateSecureRandomNumber(from: 0, to: Int32(availableNumbers.count - 1))
+                let selectedIndex = availableNumbers.index(availableNumbers.startIndex, offsetBy: Int(index))
+                let number = availableNumbers[selectedIndex]
+                sequence.append(number)
+                availableNumbers.remove(number)
+            }
+        } else {
+            for _ in 0..<length {
+                let number = try generateSecureRandomNumber(from: low, to: high)
+                sequence.append(number)
             }
         }
         
         return sequence
     }
     
-    /**
-     Returns true if the provided number appears within the sequence.
-     
-     :param: number      The number to search for in the sequence.
-     :param: sequence    The sequence to search in (must not be nil and must be of at least `length` elements)
-     :param: length      The length of the sequence to test (must be at least 1)
-     
-     :returns: Bool      TRUE if `number` is found in sequence, FALSE if not found.
-     */
-    public class func isNumber(_ number: Int32, inSequence sequence: [Int32], ofLength length: Int) -> Bool {
-        if length < 1 || length > sequence.count {
+    // MARK: - Legacy API (Deprecated)
+    
+    @available(*, deprecated, message: "Use generateSecureRandomNumber(from:to:) instead")
+    public static func generateNumberBetween(_ first: Int32, _ second: Int32) -> Int32 {
+        return (try? generateSecureRandomNumber(from: first, to: second)) ?? first
+    }
+    
+    @available(*, deprecated, message: "Use generateNumberSequence(from:to:ofLength:withUniqueValues:) instead")
+    public static func generateNumberSequenceBetween(_ first: Int32, _ second: Int32, ofLength length: Int, withUniqueValues unique: Bool) -> [Int32] {
+        return (try? generateNumberSequence(from: first, to: second, ofLength: length, withUniqueValues: unique)) ?? []
+    }
+    
+    @available(*, deprecated, message: "Use generateRandomSignedData(ofLength:) instead")
+    public static func generateRandomSignedDataOfLength(_ length: Int) -> [Int8] {
+        return (try? generateRandomSignedData(ofLength: length)) ?? []
+    }
+    
+    public static func isNumber(_ number: Int32, inSequence sequence: [Int32], ofLength length: Int) -> Bool {
+        guard length >= 1, length <= sequence.count else {
             return false
         }
         
-        for i in 0 ..< length where sequence[i] == number {
-            return true
-        }
-        
-        // The number was not found, return false
-        return false
+        return sequence.prefix(length).contains(number)
     }
-    
-    
-    /**
-     Returns an [Int8] populated with bytes whose values range from -128 to 127.
-     
-     :param: length  The length of the resulting NSData (must be at least 1)
-     
-     :returns: [Int8]   [Int8] containing random signed bytes.
-     */
-    public class func generateRandomSignedDataOfLength(_ length: Int) -> [Int8] {
-        guard length >= 1 else {
-            return []
-        }
-        
-        var sequence = BCryptSwiftRandom.generateNumberSequenceBetween(-128, 127, ofLength: length, withUniqueValues: false)
-        var randomData : [Int8] = [Int8](repeating: 0, count: length)
-        
-        for i in 0 ..< length {
-            randomData[i] = Int8(sequence[i])
-        }
-        
-        return randomData
-    }
-    
 }

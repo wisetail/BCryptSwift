@@ -1,5 +1,5 @@
 PODS:
-  - BCryptSwift (0.1.0)
+  - BCryptSwift (1.1)
 
 DEPENDENCIES:
   - BCryptSwift (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BCryptSwift: 1345c4b84d181e9af10857bc1d33e2ff2402a58f
+  BCryptSwift: f3bb08d52e9726b306a549700e158e4d038d8541
 
 PODFILE CHECKSUM: 6a6b73b9d4f82135608964ee2f35a637f5b9e792
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.15.2

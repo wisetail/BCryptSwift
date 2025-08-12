@@ -2,6 +2,12 @@
 
 BCryptSwift is an implementation of bcrypt written in Swift. It currently is able to generate the salt and hash a phrase using a generated salt.
 
+## Attribution
+
+This project is based on the original BCryptSwift by Felipe Florencio Garcia (https://github.com/felipeflorencio/BCryptSwift), which in turn was based on JKBCrypt by Joe Kramer (https://github.com/meanjoe45/JKBCrypt).
+
+Version 2.0 has been updated and is maintained by Dave Friedel / Wisetail.
+
 
 [![CI Status](http://img.shields.io/travis/fatface/BCryptSwift.svg?style=flat)](https://travis-ci.org/fatface/BCryptSwift)
 [![Version](https://img.shields.io/cocoapods/v/BCryptSwift.svg?style=flat)](http://cocoapods.org/pods/BCryptSwift)
@@ -55,11 +61,13 @@ Provide suitable unit tests for the functions in the `BCryptSwift` and `BCryptSw
 
 If you have any issues, bugs, or feature suggestions, please create an issue.
 
-## Author
+## Refactored By
 
-Felipe F Garcia, felipeflorencio@me.com
+David H. Friedel, dave.friedel@wisetail.com
+.NET Architect & Solution Developer
+**Wisetail**
 
-Twitter: @dr_nerd
+For technical support, feature requests, or enterprise inquiries, please contact the development team.
 
 ## License
 
@@ -67,8 +75,7 @@ Apache License Version 2.0
 
 ## Credits
 
-This project was inspired by and based on the Objective-C port by Jay Fuerstenberg ([Git Repo](https://github.com/jayfuerstenberg/JFCommon)).
-
-The Objective-C port is based on the original Java implementation by Damien Miller found [here](http://www.mindrot.org/projects/jBCrypt/).
-
-The Swift port was made originaly by Joe Kramer ([Git Repo](https://github.com/meanjoe45/JKBCrypt)).
+- Original BCryptSwift (this fork is based on): Felipe Florencio Garcia ([BCryptSwift](https://github.com/felipeflorencio/BCryptSwift))
+- Initial Swift port: Joe Kramer ([JKBCrypt](https://github.com/meanjoe45/JKBCrypt))
+- Objective-C implementation: Jay Fuerstenberg ([JFCommon](https://github.com/jayfuerstenberg/JFCommon))
+- Original Java bcrypt: Damien Miller ([jBCrypt](http://www.mindrot.org/projects/jBCrypt/))

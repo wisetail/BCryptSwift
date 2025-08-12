@@ -1,0 +1,204 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master ]
+  release:
+    types: [published]
+
+env:
+  SWIFT_VERSION: "5.9"
+
+jobs:
+  test-spm:
+    name: Test (SPM)
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-13, macos-14]
+        xcode: ['14.3.1', '15.2']
+        include:
+          - os: macos-13
+            xcode: '14.3.1'
+          - os: macos-14
+            xcode: '15.2'
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Select Xcode
+      run: sudo xcode-select -s /Applications/Xcode_${{ matrix.xcode }}.app
+      
+    - name: Swift version
+      run: swift --version
+      
+    - name: Build
+      run: swift build -v
+      
+    - name: Run tests
+      run: swift test -v --enable-code-coverage
+      
+    - name: Generate coverage report
+      run: |
+        xcrun llvm-cov export \
+          .build/debug/BCryptSwiftPackageTests.xctest/Contents/MacOS/BCryptSwiftPackageTests \
+          -instr-profile .build/debug/codecov/default.profdata \
+          -format lcov > coverage.lcov
+      
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.lcov
+        fail_ci_if_error: false
+
+  test-cocoapods:
+    name: Test (CocoaPods)
+    runs-on: macos-13
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Select Xcode
+      run: sudo xcode-select -s /Applications/Xcode_14.3.1.app
+      
+    - name: Install CocoaPods
+      run: gem install cocoapods
+      
+    - name: Pod install
+      run: |
+        cd Example
+        pod install
+        
+    - name: Build and test
+      run: |
+        cd Example
+        xcodebuild test \
+          -workspace BCryptSwift.xcworkspace \
+          -scheme BCryptSwift-Example \
+          -destination 'platform=iOS Simulator,name=iPhone 14' \
+          -enableCodeCoverage YES
+
+  test-platforms:
+    name: Test Multiple Platforms
+    runs-on: macos-14
+    strategy:
+      matrix:
+        destination:
+          - 'platform=iOS Simulator,name=iPhone 15'
+          - 'platform=tvOS Simulator,name=Apple TV'
+          - 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm)'
+          - 'platform=macOS'
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Select Xcode
+      run: sudo xcode-select -s /Applications/Xcode_15.2.app
+      
+    - name: Test on ${{ matrix.destination }}
+      run: |
+        xcodebuild test \
+          -scheme BCryptSwift \
+          -destination '${{ matrix.destination }}' \
+          -enableCodeCoverage YES \
+          | xcpretty --test
+
+  lint:
+    name: SwiftLint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: SwiftLint
+      uses: norio-nomura/action-swiftlint@3.2.1
+      with:
+        args: --strict
+
+  security-audit:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Run security audit
+      uses: actions/dependency-review-action@v3
+      
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+        
+    - name: Upload Trivy scan results
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+  build-docs:
+    name: Build Documentation
+    runs-on: macos-13
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Select Xcode
+      run: sudo xcode-select -s /Applications/Xcode_14.3.1.app
+      
+    - name: Install Jazzy
+      run: gem install jazzy
+      
+    - name: Generate documentation
+      run: |
+        jazzy \
+          --clean \
+          --author "Dave Friedel / Wisetail" \
+          --author_url https://github.com/wisetail \
+          --github_url https://github.com/wisetail/BCryptSwift \
+          --module BCryptSwift \
+          --source-directory BCryptSwift/Classes \
+          --readme README_UPDATED.md \
+          --documentation "*.md" \
+          --output docs
+          
+    - name: Upload documentation artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: documentation
+        path: docs/
+
+  release:
+    name: Release
+    runs-on: macos-13
+    needs: [test-spm, test-cocoapods, test-platforms, lint]
+    if: github.event_name == 'release'
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Select Xcode
+      run: sudo xcode-select -s /Applications/Xcode_14.3.1.app
+      
+    - name: Install CocoaPods
+      run: gem install cocoapods
+      
+    - name: Update version in podspec
+      run: |
+        VERSION=${{ github.event.release.tag_name }}
+        VERSION=${VERSION#v}  # Remove 'v' prefix if present
+        sed -i '' "s/s.version.*=.*/s.version          = '$VERSION'/" BCryptSwift.podspec
+        
+    - name: Validate podspec
+      run: pod lib lint BCryptSwift.podspec --allow-warnings
+      
+    - name: Deploy to CocoaPods Trunk
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+      run: |
+        pod trunk push BCryptSwift.podspec --allow-warnings
+        
+    - name: Update Package.swift version tag
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add BCryptSwift.podspec
+        git commit -m "Update podspec version to ${{ github.event.release.tag_name }}"
+        git push

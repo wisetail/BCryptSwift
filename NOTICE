@@ -1,0 +1,38 @@
+BCryptSwift
+Copyright 2017 Felipe Florencio Garcia
+Copyright 2025 Dave Friedel / Wisetail
+
+This product includes software originally developed by Felipe Florencio Garcia
+(https://github.com/felipeflorencio/BCryptSwift).
+
+This product is based on and includes code originally created by Joe Kramer 
+(https://github.com/meanjoe45/JKBCrypt).
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+================================================================================
+
+MODIFICATIONS:
+
+Version 2.0 (2025) - Dave Friedel / Wisetail
+- Replaced arc4random() with SecRandomCopyBytes for secure random generation
+- Added memory cleanup for sensitive data
+- Implemented constant-time string comparison to prevent timing attacks
+- Added modern Swift error handling with BCryptError enum
+- Created BCryptSwiftModern struct with modern Swift patterns
+- Added BCryptConfiguration for structured configuration
+- Added async/await support for iOS 13+
+- Added comprehensive test suites
+- Added Swift Package Manager support
+- Fixed division by zero vulnerability
+- Maintained backward compatibility with legacy API

@@ -1,0 +1,38 @@
+# Jazzy documentation configuration
+
+module: BCryptSwift
+author: Dave Friedel / Wisetail
+author_url: https://github.com/wisetail
+github_url: https://github.com/wisetail/BCryptSwift
+github_file_prefix: https://github.com/wisetail/BCryptSwift/tree/main
+
+readme: README_UPDATED.md
+
+documentation: "*.md"
+
+source_directory: BCryptSwift/Classes
+swift_build_tool: spm
+
+clean: true
+objc: false
+
+theme: fullwidth
+
+custom_categories:
+  - name: Core API
+    children:
+    - BCryptSwift
+    - BCryptSwiftModern
+    
+  - name: Configuration
+    children:
+    - BCryptConfiguration
+    - BCryptVersion
+    
+  - name: Security
+    children:
+    - BCryptSwiftRandom
+    
+  - name: Error Handling
+    children:
+    - BCryptError
