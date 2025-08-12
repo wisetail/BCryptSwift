@@ -8,11 +8,12 @@ This project is based on the original BCryptSwift by Felipe Florencio Garcia (ht
 
 Version 2.0 has been updated and is maintained by Dave Friedel / Wisetail.
 
-[![CI Status](http://img.shields.io/travis/fatface/BCryptSwift.svg?style=flat)](https://travis-ci.org/fatface/BCryptSwift)
+[![CI Status](https://github.com/wisetail/BCryptSwift/workflows/CI/badge.svg)](https://github.com/wisetail/BCryptSwift/actions)
 [![Version](https://img.shields.io/cocoapods/v/BCryptSwift.svg?style=flat)](http://cocoapods.org/pods/BCryptSwift)
 [![License](https://img.shields.io/cocoapods/l/BCryptSwift.svg?style=flat)](http://cocoapods.org/pods/BCryptSwift)
 [![Platform](https://img.shields.io/cocoapods/p/BCryptSwift.svg?style=flat)](http://cocoapods.org/pods/BCryptSwift)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Swift Version](https://img.shields.io/badge/Swift-5.0+-orange.svg)](https://swift.org)
 
 ## Features
 
