@@ -28,24 +28,29 @@ Version 2.0 has been updated and is maintained by Dave Friedel / Wisetail.
 
 ## Installation
 
+> **Note**: This is a fork of the original BCryptSwift. For CocoaPods, use `WisetailBCryptSwift`. For Swift Package Manager, the module name remains `BCryptSwift`.
+
 ### Swift Package Manager (Recommended)
 
 Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/felipeflorencio/BCryptSwift.git", from: "2.0.0")
+    .package(url: "https://github.com/wisetail/BCryptSwift.git", from: "2.0.0")
 ]
 ```
 
-Or in Xcode: File → Add Packages → Enter package URL
+Or in Xcode: 
+1. File → Add Package Dependencies
+2. Enter package URL: `https://github.com/wisetail/BCryptSwift.git`
+3. Select version: "Up to Next Major" → "2.0.0"
 
 ### CocoaPods
 
 Add the following line to your Podfile:
 
 ```ruby
-pod 'BCryptSwift'
+pod 'WisetailBCryptSwift'
 ```
 
 ## Usage
@@ -210,6 +215,28 @@ let hash = "$2a$10$N9qo8uLOickgx2ZMRZoMye1ISwRJW4cG6j4fJdGGrFXL3IM5IZkta"
 ```
 
 ## Migration Guide
+
+### From the Original BCryptSwift
+
+If you're migrating from the original BCryptSwift by Felipe Florencio Garcia:
+
+**For Swift Package Manager users:**
+```swift
+// Simply update your Package.swift URL:
+.package(url: "https://github.com/wisetail/BCryptSwift.git", from: "2.0.0")
+// The import statement remains the same:
+import BCryptSwift
+```
+
+**For CocoaPods users:**
+```ruby
+# Replace this:
+pod 'BCryptSwift'
+# With this:
+pod 'WisetailBCryptSwift'
+```
+
+The API remains 100% compatible, so no code changes are needed.
 
 ### From Version 1.x to 2.0
 
